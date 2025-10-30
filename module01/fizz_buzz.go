@@ -1,6 +1,7 @@
 package module01
 
 import "fmt"
+
 // FizzBuzz will print out all of the numbers
 // from 1 to N replacing any divisible by 3
 // with "Fizz", and divisible by 5 with "Buzz",
@@ -16,25 +17,25 @@ func FizzBuzz(n int) {
 	// 	printFizzBuzzValue(i)
 	// 	fmt.Print(", ")
 	// }
-    // printFizzBuzzValue(n)
+	// printFizzBuzzValue(n)
 	// fmt.Println()
-for i := 1 ; i <= n ; i++ {
-	switch{
-		case i % 3 == 0 && i % 5 == 0: // it means i % 15 == 0 
+	for i := 1; i <= n; i++ {
+		switch {
+		case i%3 == 0 && i%5 == 0: // it means i % 15 == 0
 			fmt.Print("Fizz Buzz")
-		case i % 3 == 0:  
-			fmt.Print("Fizz")	
-		case i % 5 == 0:
+		case i%3 == 0:
+			fmt.Print("Fizz")
+		case i%5 == 0:
 			fmt.Print("Buzz")
 		default:
-			fmt.Print(i)	
+			fmt.Print(i)
 		}
-		if i!=n{
+		if i != n {
 			fmt.Print(", ")
-		}	
+		}
 	}
 	fmt.Println()
-}	
+}
 
 // func printFizzBuzzValue(n int ){
 // 	// if n % 3 == 0 && n % 5 == 0{
@@ -42,18 +43,35 @@ for i := 1 ; i <= n ; i++ {
 // 	// }else if n % 3 == 0 {
 // 	// 	fmt.Print("Fizz")
 // 	// }else if n % 5 == 0 {
-// 	// 	fmt.Print("Buzz")	
+// 	// 	fmt.Print("Buzz")
 // 	// } else {
 // 	// 	fmt.Print(n)
 // 	// }
 // 	switch{
-// 		case n % 3 == 0 && n % 5 == 0: // it means i % 15 == 0 
+// 		case n % 3 == 0 && n % 5 == 0: // it means i % 15 == 0
 // 			fmt.Print("Fizz Buzz")
-// 		case n % 3 == 0:  
-// 			fmt.Print("Fizz")	
+// 		case n % 3 == 0:
+// 			fmt.Print("Fizz")
 // 		case n % 5 == 0:
 // 			fmt.Print("Buzz")
 // 		default:
-// 			fmt.Print(n)	
+// 			fmt.Print(n)
 // 		}
+// }
+
+// for i := 1; i <= n; i++ {
+// 	switch {
+// 	case i%15 == 0:
+// 		fmt.Print("FizzBuzz")
+// 	case i%3 == 0:
+// 		fmt.Print("Fizz")
+// 	case i%5 == 0:
+// 		fmt.Print("Buzz")
+// 	default:
+// 		fmt.Print(i)
+// 	}
+// 	if i != n {
+// 		fmt.Print(", ")
+// 	}
+// }
 // }
