@@ -7,6 +7,7 @@ import (
 
 func main() {
 	var n int
+	fmt.Println("How many inputs ? ")
 	fmt.Scanf("%d", &n)
 	for i := 0; i < n; i++ {
 		var a, b int
